@@ -1,0 +1,82 @@
+/*Styles for Sidebar*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  background: #fff;
+}
+button {
+  padding: 5px 5px;
+  width: 25%;
+  background-color: blue;
+}
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+#sidebar {
+    min-width: 300px;
+    max-width: 300px;
+    background: #000;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -300px;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px;
+    background: #000;
+    color: white;
+}
+#content {
+    padding: 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+} 
+.location-item li {
+  padding: 2px;
+  font-weight: bold;
+  list-style: none;
+}
+.location-item li a{
+  text-decoration-line: none;
+  color: white;
+  font-size: 12px;
+}
+.map {
+
+  height: 90%;
+  width: 100%;
+  position: relative;
+  bottom: 1%;
+}
+.search {
+  margin: 1% 1%;
+  padding: 5px 5px;
+  width: 65%;
+}
+.btn-inactive {
+  left: 0px;
+}
+.map-full {
+  width: 130%;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+.navbar {
+    background: #000;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
